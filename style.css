@@ -1,0 +1,200 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fb; /* light gray background */
+  color: #1f2937; /* Tailwind gray-800 */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #111827; /* darker heading */
+}
+
+p {
+  color: #4b5563; /* muted gray text */
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header a {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+header a:hover {
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+/* ==========================
+   HERO
+========================== */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-outline {
+  border: 2px solid #d1d5db;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #f3f4f6;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #2563eb;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* ==========================
+   EVENTS
+========================== */
+.event-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-card .event-info {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 80%;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* ==========================
+   BOOKS (CAROUSEL)
+========================== */
+#carousel img {
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+#carousel img:hover {
+  transform: scale(1.05);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+#contact-form input,
+#contact-form textarea {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background: #111827;
+  color: #d1d5db;
+}
+
+footer h3 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+footer a {
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}

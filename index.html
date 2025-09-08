@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Young</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <!-- Logo -->
+      <a href="#" class="text-lg font-bold">Daniel Young</a>
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Event</a>
+        <a href="#" class="hover:text-blue-600">Coaching</a>
+        <a href="#" class="hover:text-blue-600">Speaking</a>
+        <a href="#" class="hover:text-blue-600">Resource</a>
+      </nav>
+
+      <!-- Book Now (Black button) -->
+      <a href="#" class="hidden md:inline-block bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">
+        Book Now
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg px-6 py-4 space-y-4">
+      <a href="#" class="block">About</a>
+      <a href="#" class="block">Event</a>
+      <a href="#" class="block">Coaching</a>
+      <a href="#" class="block">Speaking</a>
+      <a href="#" class="block">Resource</a>
+      <a href="#" class="block bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Book Now</a>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <section class="pt-24 pb-12 bg-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl font-bold mb-4">
+          Liberating African Businesses, Building Global Legacies
+        </h1>
+        <p class="mb-6 text-gray-600">
+          Daniel Uzodinma Young is igniting a new generation of African entrepreneurs and leaders...
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800">Book Now</a>
+          <a href="#" class="border border-gray-300 px-5 py-3 rounded-lg">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center">
+        <img src="hero.jpg" alt="Daniel Young" class="rounded-lg shadow-lg w-80">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       STATS
+  ========================== -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">35</h3>
+        <p class="text-gray-600">Years of Experience</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">1000+</h3>
+        <p class="text-gray-600">Lives Reached</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">10+</h3>
+        <p class="text-gray-600">Active Industries</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">15+</h3>
+        <p class="text-gray-600">Countries Reached</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       ABOUT SECTION
+  ========================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <img src="about.jpg" alt="About Daniel" class="rounded-lg shadow-lg w-80">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">About Daniel</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Daniel Uzodinma Young is a <strong>serial entrepreneur, inspirational speaker, author, and nation builder</strong> committed 
+          to unlocking Africa’s potential and shaping a new generation of purpose-driven leaders. Daniel has built a 
+          legacy of excellence across diverse industries—including education, manufacturing, food, training, 
+          construction, and more—demonstrating that <strong>African businesses can scale and compete globally</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       EVENTS SECTION
+  ========================== -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-6">Upcoming Events</h2>
+      <div class="relative">
+        <img src="event.jpg" alt="Event" class="rounded-lg shadow-lg w-full">
+        <div class="absolute bottom-6 left-6 text-white text-3xl font-bold">
+          RETIREMENT REVOLUTION SEMINAR 2025
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       BEST SELLERS (Carousel)
+  ========================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-6">Best Sellers</h2>
+
+      <!-- Carousel Wrapper -->
+      <div class="relative overflow-hidden">
+        <div id="carousel" class="flex transition-transform duration-500">
+          <!-- Book items -->
+          <img src="book1.jpg" alt="Book 1" class="w-48 rounded-lg shadow mx-2">
+          <img src="book2.jpg" alt="Book 2" class="w-48 rounded-lg shadow mx-2">
+          <img src="book3.jpg" alt="Book 3" class="w-48 rounded-lg shadow mx-2">
+        </div>
+
+        <!-- Carousel Controls -->
+        <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white px-3 py-2 rounded-full">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white px-3 py-2 rounded-full">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       CALL TO ACTION
+  ========================== -->
+  <section class="py-16 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Be Part of the Transformation</h2>
+    <p class="text-gray-600 mb-6">
+      Join thousands of purpose-driven leaders transforming Africa and the world
+    </p>
+    <a href="#" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">Contact Me</a>
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="bg-[#0B0E14] text-gray-300 pt-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 pb-10">
+      <!-- Left Side -->
+      <div>
+        <h2 class="text-white text-xl font-bold mb-4">DANIEL YOUNG</h2>
+        <p class="mb-6 text-sm leading-relaxed">
+          Daniel Uzodinma Young is igniting a new generation of African entrepreneurs 
+          and leaders—equipping them with the mindset, strategies and systems 
+          to conquer global market.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Links -->
+        <div>
+          <h3 class="font-bold text-white mb-3">About</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Event</a></li>
+            <li><a href="#" class="hover:text-white">Coaching</a></li>
+            <li><a href="#" class="hover:text-white">Speaking</a></li>
+            <li><a href="#" class="hover:text-white">Resource</a></li>
+          </ul>
+        </div>
+        <!-- Connect -->
+        <div>
+          <h3 class="font-bold text-white mb-3">Connect</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Book Now</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          </ul>
+          <!-- Social icons -->
+          <div class="flex space-x-4 mt-4">
+            <a href="#"><i class="fab fa-facebook-f hover:text-white"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-white"></i></a>
+            <a href="#"><i class="fab fa-x-twitter hover:text-white"></i></a>
+            <a href="#"><i class="fab fa-whatsapp hover:text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom line -->
+    <div class="border-t border-gray-700 mt-6">
+      <p class="text-center text-xs text-gray-400 py-4">
+        Daniel Young Official © 2025. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Simple Carousel Logic
+    const carousel = document.getElementById("carousel");
+    const next = document.getElementById("next");
+    const prev = document.getElementById("prev");
+    let offset = 0;
+
+    next.addEventListener("click", () => {
+      offset -= 200; // slide left
+      carousel.style.transform = `translateX(${offset}px)`;
+    });
+
+    prev.addEventListener("click", () => {
+      offset += 200; // slide right
+      carousel.style.transform = `translateX(${offset}px)`;
+    });
+  </script>
+</body>
+</html>
