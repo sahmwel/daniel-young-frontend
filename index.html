@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Young</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -126,32 +128,43 @@
 <!-- ===== BEST SELLERS (3-Col Desktop / Mobile Carousel)===== -->
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl font-bold mb-6 text-[#1C1364]">Best Sellers</h2>
+    <h2 class="text-2xl font-bold mb-6 text-[#1C1364] flex items-center gap-2">
+      <i class="fas fa-book text-[#1C1364]"></i> Best Sellers
+    </h2>
 
     <!-- Mobile: Horizontal scroll | Desktop: 3-col grid -->
-    <div class="flex space-x-4 overflow-x-auto md:grid md:grid-cols-3 md:gap-6 scrollbar-hide">
+    <div id="books-carousel" 
+         class="flex space-x-4 overflow-x-auto md:grid md:grid-cols-3 md:gap-6 scrollbar-hide">
       
       <!-- Book 1 -->
-      <div class="min-w-[200px] md:min-w-0 w-full h-64 flex-shrink-0">
+      <div class="min-w-[220px] md:min-w-0 flex-shrink-0 bg-white rounded-lg shadow overflow-hidden">
         <img src="./images/DY Best Seller 1.png" alt="Book 1" 
-             class="w-full h-full object-cover rounded-lg shadow">
+             class="w-full h-72 object-cover">
+        <div class="p-3 text-center">
+          <h3 class="text-sm font-semibold text-[#1C1364]">Book Title 1</h3>
+        </div>
       </div>
 
       <!-- Book 2 -->
-      <div class="min-w-[200px] md:min-w-0 w-full h-64 flex-shrink-0">
+      <div class="min-w-[220px] md:min-w-0 flex-shrink-0 bg-white rounded-lg shadow overflow-hidden">
         <img src="./images/DY Best Seller 2.png" alt="Book 2" 
-             class="w-full h-full object-cover rounded-lg shadow">
+             class="w-full h-72 object-cover">
+        <div class="p-3 text-center">
+          <h3 class="text-sm font-semibold text-[#1C1364]">Book Title 2</h3>
+        </div>
       </div>
 
       <!-- Book 3 -->
-      <div class="min-w-[200px] md:min-w-0 w-full h-64 flex-shrink-0">
+      <div class="min-w-[220px] md:min-w-0 flex-shrink-0 bg-white rounded-lg shadow overflow-hidden">
         <img src="./images/DY Best Seller 3.png" alt="Book 3" 
-             class="w-full h-full object-cover rounded-lg shadow">
+             class="w-full h-72 object-cover">
+        <div class="p-3 text-center">
+          <h3 class="text-sm font-semibold text-[#1C1364]">Book Title 3</h3>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
@@ -195,12 +208,21 @@
           <li><a href="#" class="hover:text-white">Book Now</a></li>
           <li><a href="#" class="hover:text-white">Contact Us</a></li>
         </ul>
-        <!-- Social icons -->
-        <div class="flex space-x-4 mt-4">
-          <a href="#"><i class="fab fa-facebook-f hover:text-white"></i></a>
-          <a href="#"><i class="fab fa-instagram hover:text-white"></i></a>
-          <a href="#"><i class="fab fa-x-twitter hover:text-white"></i></a>
-          <a href="#"><i class="fab fa-whatsapp hover:text-white"></i></a>
+
+        <!-- Social Icons (Responsive) -->
+        <div class="flex flex-wrap gap-3 mt-4 text-base sm:text-lg md:text-xl">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                class="p-2 md:p-3 rounded-full bg-white/10 text-gray-300 hover:bg-white hover:text-[#1C1364] transition-colors duration-200">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                class="p-2 md:p-3 rounded-full bg-white/10 text-gray-300 hover:bg-white hover:text-[#1C1364] transition-colors duration-200">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank" aria-label="X"
+                class="p-2 md:p-3 rounded-full bg-white/10 text-gray-300 hover:bg-white hover:text-[#1C1364] transition-colors duration-200">
+                <i class="fab fa-x"></i>
+            </a>
         </div>
       </div>
     </div>
@@ -216,6 +238,15 @@
 
   <!-- ====== JAVASCRIPT ======= -->
   <script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          nunito: ['"Nunito Sans"', 'sans-serif'],
+        },
+      },
+    },
+  }
   // =========
   // MOBILE MENU TOGGLE
   // ========
