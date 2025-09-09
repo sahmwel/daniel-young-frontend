@@ -7,11 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans bg-gray-50 text-gray-900">
+<body>
 
-  <!-- =========================
-       NAVBAR
-  ========================== -->
+  <!-- ===== NAVBAR ===== -->
   <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
       <!-- Logo Image -->
@@ -28,7 +26,7 @@
         <a href="#" class="hover:text-[#1C1364]">Resource</a>
       </nav>
 
-      <!-- Book Now (Blue button) -->
+      <!-- Book Now  -->
       <a href="#" class="hidden md:inline-block bg-[#1C1364] text-white px-4 py-2 rounded-lg hover:bg-[#150f50]">
         Book Now
       </a>
@@ -54,9 +52,7 @@
     </div>
   </header>
 
-  <!-- =========================
-       HERO SECTION
-  ========================== -->
+  <!-- ===== HERO SECTION ===== -->
   <section class="pt-24 pb-12 bg-white">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
       <!-- Left Content -->
@@ -79,9 +75,7 @@
     </div>
   </section>
 
-  <!-- =========================
-       STATS
-  ========================== -->
+  <!-- ===== STATS ===== -->
   <section class="py-12 bg-gray-50">
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-6">
       <div>
@@ -103,27 +97,23 @@
     </div>
   </section>
 
-  <!-- =========================
-       ABOUT SECTION
-  ========================== -->
+  <!-- ===== ABOUT SECTION ===== -->
   <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
       <img src="./images/Daniel Young Second Image.png" alt="About Daniel" class="rounded-lg shadow-lg w-80">
       <div>
         <h2 class="text-2xl font-bold mb-4 text-[#1C1364]">About Daniel</h2>
         <p class="text-gray-600 leading-relaxed">
-          Daniel Uzodinma Young is a <strong>serial entrepreneur, inspirational speaker, author, and nation builder</strong> committed 
+          Daniel Uzodinma Young is a serial entrepreneur, inspirational speaker, author, and nation builder committed 
           to unlocking Africa’s potential and shaping a new generation of purpose-driven leaders. Daniel has built a 
           legacy of excellence across diverse industries—including education, manufacturing, food, training, 
-          construction, and more—demonstrating that <strong>African businesses can scale and compete globally</strong>.
+          construction, and more—demonstrating that African businesses can scale and compete globally.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- =========================
-       EVENTS SECTION
-  ========================== -->
+  <!-- ===== EVENTS SECTION ===== -->
   <section class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl font-bold mb-6 text-[#1C1364]">Upcoming Events</h2>
@@ -133,9 +123,7 @@
     </div>
   </section>
 
-<!-- =========================
-     BEST SELLERS (3-Col Desktop / Mobile Carousel)
-========================== -->
+<!-- ===== BEST SELLERS (3-Col Desktop / Mobile Carousel)===== -->
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold mb-6 text-[#1C1364]">Best Sellers</h2>
@@ -160,7 +148,6 @@
         <img src="./images/DY Best Seller 3.png" alt="Book 3" 
              class="w-full h-full object-cover rounded-lg shadow">
       </div>
-
     </div>
   </div>
 </section>
@@ -168,9 +155,7 @@
 
 
 
-  <!-- =========================
-       CALL TO ACTION
-  ========================== -->
+  <!-- ======= CALL TO ACTION ====== -->
   <section class="py-16 bg-gray-50 text-center">
     <h2 class="text-3xl font-bold mb-4 text-[#1C1364]">Be Part of the Transformation</h2>
     <p class="text-gray-600 mb-6">
@@ -179,9 +164,7 @@
     <a href="#" class="bg-[#1C1364] text-white px-6 py-3 rounded-lg hover:bg-[#150f50]">Contact Me</a>
   </section>
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- ======= FOOTER ====== -->
 <footer class="bg-[#1C1364] text-gray-300 pt-12">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 pb-10">
     
@@ -205,7 +188,6 @@
           <li><a href="#" class="hover:text-white">Resource</a></li>
         </ul>
       </div>
-
       <!-- Connect -->
       <div>
         <h3 class="font-bold text-white mb-3">Connect</h3>
@@ -232,13 +214,11 @@
   </div>
 </footer>
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
+  <!-- ====== JAVASCRIPT ======= -->
   <script>
-  // =========================
+  // =========
   // MOBILE MENU TOGGLE
-  // =========================
+  // ========
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
@@ -246,9 +226,9 @@
     mobileMenu.classList.toggle("hidden");
   });
 
-  // =========================
+  // ========
   // BEST SELLERS CAROUSEL (Mobile Only)
-  // =========================
+  // ========
   const carousel = document.getElementById("books-carousel");
 
   if (carousel) {
