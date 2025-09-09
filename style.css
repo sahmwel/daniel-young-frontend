@@ -1,28 +1,52 @@
 /* ==========================
-   GLOBAL STYLES
+   GLOBAL VARIABLES
+========================== */
+:root {
+  --color-bg: #f8f9fb;            /* light gray */
+  --color-text: #1f2937;          /* gray-800 */
+  --color-heading: #111827;       /* gray-900 */
+  --color-muted: #4b5563;         /* gray-600 */
+  --color-subheading: #374151;    /* gray-700 */
+
+  --color-link: #2563eb;          /* blue-600 */
+  --color-link-hover: #1d4ed8;    /* blue-700 */
+
+  --color-border: #e5e7eb;        /* gray-200 */
+  --color-outline: #d1d5db;       /* gray-300 */
+  --color-outline-hover: #f3f4f6; /* gray-100 */
+
+  --color-white: #ffffff;         /* pure white */
+
+  --color-footer-bg: #111827;     /* footer dark */
+  --color-footer-text: #d1d5db;   /* footer light */
+  --color-footer-link: #9ca3af;   /* gray-400 */
+}
+
+/* ==========================
+   GLOBAL
 ========================== */
 body {
-  font-family: "Inter", sans-serif;
-  background-color: #f8f9fb; /* light gray background */
-  color: #1f2937; /* Tailwind gray-800 */
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
   font-weight: 700;
-  color: #111827; /* darker heading */
+  color: var(--color-heading);
 }
 
 p {
-  color: #4b5563; /* muted gray text */
+  color: var(--color-muted);
 }
 
 /* ==========================
    NAVBAR
 ========================== */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
 }
 
 header a {
@@ -31,12 +55,12 @@ header a {
 }
 
 header a:hover {
-  color: #2563eb; /* Tailwind blue-600 */
+  color: var(--color-link);
 }
 
 #menu-btn {
   font-size: 1.5rem;
-  color: #111827;
+  color: var(--color-heading);
 }
 
 /* ==========================
@@ -45,13 +69,13 @@ header a:hover {
 .hero-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--color-heading);
   line-height: 1.2;
 }
 
 .hero-subtitle {
   font-size: 1.125rem;
-  color: #374151;
+  color: var(--color-subheading);
   margin-bottom: 1.5rem;
 }
 
@@ -59,8 +83,8 @@ header a:hover {
    BUTTONS
 ========================== */
 .btn-primary {
-  background-color: #2563eb;
-  color: white;
+  background-color: var(--color-link);
+  color: var(--color-white);
   padding: 0.75rem 1.5rem;
   border-radius: 0.75rem;
   font-weight: 600;
@@ -69,11 +93,11 @@ header a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--color-link-hover);
 }
 
 .btn-outline {
-  border: 2px solid #d1d5db;
+  border: 2px solid var(--color-outline);
   padding: 0.75rem 1.5rem;
   border-radius: 0.75rem;
   font-weight: 600;
@@ -81,15 +105,14 @@ header a:hover {
 }
 
 .btn-outline:hover {
-  background-color: #f3f4f6;
+  background-color: var(--color-outline-hover);
 }
 
 /* ==========================
    SECTIONS
 ========================== */
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 .section-title {
@@ -105,7 +128,7 @@ section {
   display: block;
   width: 60px;
   height: 4px;
-  background: #2563eb;
+  background: var(--color-link);
   margin: 0.75rem auto 0;
   border-radius: 2px;
 }
@@ -129,7 +152,7 @@ section {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   font-weight: 700;
   max-width: 80%;
@@ -137,64 +160,24 @@ section {
 }
 
 /* ==========================
-   BOOKS (CAROUSEL)
-========================== */
-#carousel img {
-  border-radius: 1rem;
-  transition: transform 0.3s;
-}
-
-#carousel img:hover {
-  transform: scale(1.05);
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* ==========================
-   CONTACT FORM
-========================== */
-#contact-form input,
-#contact-form textarea {
-  border: 1px solid #d1d5db;
-  padding: 0.75rem 1rem;
-  border-radius: 0.75rem;
-  width: 100%;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
-  outline: none;
-}
-
-/* ==========================
    FOOTER
 ========================== */
 footer {
-  background: #111827;
-  color: #d1d5db;
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
 }
 
 footer h3 {
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 footer a {
-  color: #9ca3af;
+  color: var(--color-footer-link);
   transition: color 0.2s;
 }
 
 footer a:hover {
-  color: #ffffff;
+  color: var(--color-white);
 }
